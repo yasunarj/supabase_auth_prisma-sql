@@ -1,0 +1,29 @@
+name: CI - Lint & Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v3
+
+      - name: Node.jsのセットアップ
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: 依存関係のインストール
+        run: npm install
+
+      - name: Lintチェック
+        run: npm run lint
+
+      - name: 本番ビルド
+        run: npm run build
