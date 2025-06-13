@@ -25,3 +25,16 @@ git clone https://github.com/yasunarj/supabase_auth_prisma-sql.git
 cd  supabase_auth_prisma_app
 npm install
 npm run dev
+```
+
+## CI/CDについて
+
+このプロジェクトでは、以下の自動化を GitHub Actions を用いて実現しています:
+
+- Lintチェック(`npm run lint`)
+- ユニットテスト(Jestによる `npm test`)
+- 本番ビルド検証(`npm run build`)
+
+上記が全て成功した場合のみ、自動的に Vercel にデプロイされます。
+
+CI/CD フローは `.github/workflows/ci.yml` に定義されています。
