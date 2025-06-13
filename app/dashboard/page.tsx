@@ -67,6 +67,9 @@ const DashboardPage = async () => {
         <Link href="/sql" className="text-green-700 text-xl hover:text-green-900">
           SQL確認ページ
         </Link>
+        <Link href="/github" className="text-purple-700 text-xl hover:text-purple-900">
+          GitHub確認ページ
+        </Link>
       </div>
       <div>
         <LogoutButton />
