@@ -7,6 +7,10 @@ const GitHubPage = () => {
           <h3 className="text-xl">ステップ１</h3>
           <p>featureブランチを作成</p>
         </li>
+        <li className="mt-6">
+          <h3 className="text-xl">ステップ２</h3>
+          <p>Pull Requestを作成してmergeを実行する</p>
+        </li>
       </ul>
     </div>
   );
