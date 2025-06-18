@@ -70,6 +70,9 @@ const DashboardPage = async () => {
         <Link href="/github" className="text-purple-700 text-xl hover:text-purple-900">
           GitHub確認ページ
         </Link>
+        <Link href="/chat" className="text-yellow-700 text-xl hover:text-yellow-900">
+          AIに相談してみよう
+        </Link>
       </div>
       <div>
         <LogoutButton />
